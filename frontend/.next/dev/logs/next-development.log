@@ -1,0 +1,208 @@
+[00:00:04.246] Server  LOG     ✓ Ready in 3.1s
+[00:00:05.285] Server  ERROR   ⨯ ./src/app/dashboard/page.tsx:5:1
+Export FacultyDashboard doesn't exist in target module
+  3 | import ProtectedRoute from '@/components/ProtectedRoute';
+  4 | import { StudentDashboard } from '@/components/dashboards/StudentDashboard';
+> 5 | import { FacultyDashboard } from '@/components/dashboards/FacultyDashboard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { AuthorityDashboard } from '@/components/dashboards/AuthorityDashboard';
+  7 | import { AdminDashboard } from '@/components/dashboards/AdminDashboard';
+  8 |
+
+The export FacultyDashboard was not found in module [project]/src/components/dashboards/FacultyDashboard.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+
+
+./src/app/dashboard/page.tsx:5:1
+Export FacultyDashboard doesn't exist in target module
+  3 | import ProtectedRoute from '@/components/ProtectedRoute';
+  4 | import { StudentDashboard } from '@/components/dashboards/StudentDashboard';
+> 5 | import { FacultyDashboard } from '@/components/dashboards/FacultyDashboard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { AuthorityDashboard } from '@/components/dashboards/AuthorityDashboard';
+  7 | import { AdminDashboard } from '@/components/dashboards/AdminDashboard';
+  8 |
+
+The export FacultyDashboard was not found in module [project]/src/components/dashboards/FacultyDashboard.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+
+[00:00:07.059] Browser ERROR   uncaughtError: Error: ./src/app/dashboard/page.tsx:5:1
+Export FacultyDashboard doesn't exist in target module
+  3 | import ProtectedRoute from '@/components/ProtectedRoute';
+  4 | import { StudentDashboard } from '@/components/dashboards/StudentDashboard';
+> 5 | import { FacultyDashboard } from '@/components/dashboards/FacultyDashboard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { AuthorityDashboard } from '@/components/dashboards/AuthorityDashboard';
+  7 | import { AdminDashboard } from '@/components/dashboards/AdminDashboard';
+  8 |
+
+The export FacultyDashboard was not found in module [project]/src/components/dashboards/FacultyDashboard.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+
+[00:00:08.051] Browser ERROR   ./src/app/dashboard/page.tsx:5:1
+Export FacultyDashboard doesn't exist in target module
+  3 | import ProtectedRoute from '@/components/ProtectedRoute';
+  4 | import { StudentDashboard } from '@/components/dashboards/StudentDashboard';
+> 5 | import { FacultyDashboard } from '@/components/dashboards/FacultyDashboard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { AuthorityDashboard } from '@/components/dashboards/AuthorityDashboard';
+  7 | import { AdminDashboard } from '@/components/dashboards/AdminDashboard';
+  8 |
+
+The export FacultyDashboard was not found in module [project]/src/components/dashboards/FacultyDashboard.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:00:08.051] Browser ERROR   ./src/app/dashboard/page.tsx:5:1
+Export FacultyDashboard doesn't exist in target module
+  3 | import ProtectedRoute from '@/components/ProtectedRoute';
+  4 | import { StudentDashboard } from '@/components/dashboards/StudentDashboard';
+> 5 | import { FacultyDashboard } from '@/components/dashboards/FacultyDashboard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { AuthorityDashboard } from '@/components/dashboards/AuthorityDashboard';
+  7 | import { AdminDashboard } from '@/components/dashboards/AdminDashboard';
+  8 |
+
+The export FacultyDashboard was not found in module [project]/src/components/dashboards/FacultyDashboard.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:00:08.999] Browser ERROR   ./src/app/dashboard/page.tsx:5:1
+Export FacultyDashboard doesn't exist in target module
+  3 | import ProtectedRoute from '@/components/ProtectedRoute';
+  4 | import { StudentDashboard } from '@/components/dashboards/StudentDashboard';
+> 5 | import { FacultyDashboard } from '@/components/dashboards/FacultyDashboard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { AuthorityDashboard } from '@/components/dashboards/AuthorityDashboard';
+  7 | import { AdminDashboard } from '@/components/dashboards/AdminDashboard';
+  8 |
+
+The export FacultyDashboard was not found in module [project]/src/components/dashboards/FacultyDashboard.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:00:08.999] Browser ERROR   ./src/app/dashboard/page.tsx:5:1
+Export FacultyDashboard doesn't exist in target module
+  3 | import ProtectedRoute from '@/components/ProtectedRoute';
+  4 | import { StudentDashboard } from '@/components/dashboards/StudentDashboard';
+> 5 | import { FacultyDashboard } from '@/components/dashboards/FacultyDashboard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { AuthorityDashboard } from '@/components/dashboards/AuthorityDashboard';
+  7 | import { AdminDashboard } from '@/components/dashboards/AdminDashboard';
+  8 |
+
+The export FacultyDashboard was not found in module [project]/src/components/dashboards/FacultyDashboard.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:02:26.413] Server  LOG     ✓ Compiled in 5.9s
+[00:02:29.167] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:44.999] Browser ERROR   [AuthContext] Error getting token result {"code":"auth/network-request-failed","customData":{"appName":"[DEFAULT]","message":"TypeError: Failed to fetch"},"name":"FirebaseError"}
+[00:12:59.653] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:04.088] Browser ERROR   uncaughtError: ReferenceError: AlertTriangle is not defined
+[00:17:50.536] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:02.145] Browser ERROR   uncaughtError: ReferenceError: AlertTriangle is not defined
+[00:18:17.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:38.895] Browser ERROR   {"code":"auth/invalid-credential","customData":{},"name":"FirebaseError"}
+[00:26:39.758] Server  LOG     ○ Compiling /admin/users ...
+[00:26:45.937] Browser ERROR   {}
+[00:26:45.937] Browser ERROR   {}
+[00:26:56.597] Browser ERROR   {}
+[00:26:56.597] Browser ERROR   {}
+[00:27:05.141] Browser ERROR   uncaughtError: ReferenceError: Shield is not defined
+[00:30:31.129] Server  LOG     ✓ Compiled in 637ms
+[00:30:31.143] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:30:36.445] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:37.994] Browser ERROR   {}
+[00:31:04.125] Server  LOG     ✓ Compiled in 818ms
+[00:34:54.667] Browser ERROR   {}
+[00:34:54.667] Browser ERROR   {}
+[00:37:29.829] Server  LOG     ✓ Finished filesystem cache database compaction in 12.7s
+[00:39:58.197] Server  LOG     ✓ Compiled in 2.4s
+[00:41:09.710] Server  LOG     ✓ Compiled in 1946ms
+[00:41:53.450] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:49.102] Server  LOG     ✓ Compiled in 9s
+[00:43:50.997] Browser ERROR   {}
+[00:43:50.997] Browser ERROR   {}
+[00:44:32.056] Server  LOG     ✓ Compiled in 6.2s
+[00:46:41.486] Server  LOG     ✓ Compiled in 24.1s
+[00:47:18.531] Server  LOG     ✓ Compiled in 8.6s
+[00:47:53.373] Server  LOG     ✓ Compiled in 1627ms
+[00:49:24.482] Server  LOG     ○ Compiling /grievances/[id] ...
+[00:50:41.693] Server  LOG     ✓ Compiled in 11.6s
+[00:51:25.643] Server  LOG     ✓ Compiled in 6.8s
+[00:52:17.196] Server  LOG     ✓ Finished filesystem cache database compaction in 47s
+[00:52:17.469] Server  LOG     ✓ Finished writing to filesystem cache in 39.7s
+[00:52:26.894] Browser ERROR   {}
+[00:52:26.895] Browser ERROR   {}
+[00:52:34.943] Server  LOG     ○ Compiling /admin/analytics ...
+[00:52:41.543] Browser ERROR   {}
+[00:52:41.543] Browser ERROR   {}
+[00:52:54.107] Browser ERROR   {}
+[00:52:54.107] Browser ERROR   {}
+[00:53:47.591] Server  LOG     ✓ Compiled in 5.8s

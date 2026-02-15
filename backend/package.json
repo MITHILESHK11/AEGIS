@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "AEGIS+ Backend Service",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --no-deprecation src/index.js",
+    "dev": "nodemon --no-deprecation src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aegis+",
+    "backend",
+    "express",
+    "firebase"
+  ],
+  "author": "AlgoHackz",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/aiplatform": "^6.4.0",
+    "@google-cloud/vertexai": "1.10.0",
+    "axios": "1.13.5",
+    "compression": "1.8.1",
+    "cors": "2.8.6",
+    "dotenv": "17.3.1",
+    "express": "5.2.1",
+    "firebase-admin": "13.6.1",
+    "helmet": "8.1.0",
+    "nodemon": "3.1.11",
+    "punycode": "^2.3.1",
+    "uuid": "13.0.0"
+  }
+}

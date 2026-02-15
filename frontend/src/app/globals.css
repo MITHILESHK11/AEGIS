@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* AEGIS+ Light Mode - Clean, crisp, academic */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --card-border: 220 13% 91%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 221 83% 53%;
+    /* Vivid Blue */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* AEGIS+ Premium Dark Mode - Deep Space */
+    /* background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #0B1120 100%) - mapped to HSL base roughly */
+    --background: 222 47% 6%;
+    /* #0B1120 base */
+    --foreground: 210 40% 98%;
+    /* #F8FAFC */
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --card-border: 217 33% 20%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    /* Brighter Blue for Dark Mode */
+    --primary-foreground: 222 47% 11.2%;
+
+    --secondary: 217 33% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    /* #94A3B8 */
+
+    --accent: 217 33% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    /* Focus Ring matches primary */
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground tracking-tight;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-image:
+      radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.08), transparent 25%),
+      linear-gradient(135deg, hsl(222, 47%, 8%) 0%, hsl(222, 47%, 12%) 100%);
+    background-attachment: fixed;
+  }
+
+  /* Reset for light mode override if needed */
+  :root:not(.dark) body {
+    background-image: none;
+    @apply bg-slate-50;
+  }
+
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-foreground;
+  }
+
+  h1 {
+    @apply text-3xl lg:text-4xl leading-tight;
+  }
+
+  h2 {
+    @apply text-2xl lg:text-3xl leading-snug;
+  }
+
+  h3 {
+    @apply text-xl lg:text-2xl leading-snug;
+  }
+
+  p {
+    @apply leading-relaxed text-muted-foreground text-sm lg:text-base;
+  }
+}
+
+@layer utilities {
+
+  /* AEGIS+ Card System */
+  .aegis-card {
+    @apply bg-white border border-slate-200 shadow-sm rounded-2xl transition-all duration-300;
+  }
+
+  .aegis-card:hover {
+    @apply border-indigo-200 shadow-md scale-[1.01];
+  }
+
+  .dark .aegis-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  .dark .aegis-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+
+  /* Table Styles */
+  .aegis-table-header {
+    @apply bg-slate-50 text-xs font-bold uppercase tracking-wider text-slate-500 p-4 text-left;
+  }
+
+  .dark .aegis-table-header {
+    @apply bg-muted/50 text-muted-foreground;
+  }
+
+  .aegis-table-row {
+    @apply border-b border-slate-100 hover:bg-slate-50 transition-colors;
+  }
+
+  .dark .aegis-table-row {
+    @apply border-b border-white/5 hover:bg-white/5;
+  }
+
+  /* Focus States */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  /* Scrollbars */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+}
